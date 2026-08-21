@@ -1,10 +1,10 @@
 #include <iostream>
-
+#include <string>
+using namespace std;
 int main() {
-    int a;
-    int b;
-    int c;
-    std::cin >> a >> b >> c;
-    std::cout << (a+b+c) << std::endl;
+    int number;
+    string word;
+    cin >> number >> word;
+    cout << "You entered: " << number << " and " << word
     return 0;
 }
