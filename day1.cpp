@@ -2,8 +2,10 @@
 using namespace std;
 
 int main() {
-    string word;
-    cin >> word;
-    cout << word;
+    string name;
+    cin >> age;
+    getline(cin,name);
+    cout<< age;
+    cout<<name;
     return 0;
 }
