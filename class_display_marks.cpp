@@ -1,21 +1,17 @@
 #include <iostream>
+#include <string>
 using namespace std;
-
-class DM {
-private:
-    int marks; 
-public:
-    DM(int m) {
-        marks = m;
-    }
-    void display() {
-        cout << "Marks: " << marks << endl;
-    }
+struct DM {
+    int age;
+    string name;
 };
+void display(DM person) {
+    cout << "Name: " << person.name << endl;
+    cout << "Age: " << person.age << endl;
+}
 int main() {
-    DM a(85);   
-    a.display(); 
-    DM b(92);
-    b.display();
+    DM student1;  
+    student1.name = "Ayush";
+    student1.age = 20;
     return 0;
 }
