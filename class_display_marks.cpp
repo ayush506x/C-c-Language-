@@ -5,4 +5,4 @@ struct DM {
     int age;
     string name;
 };
-struct name
+struct namev bds
