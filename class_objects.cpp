@@ -25,7 +25,7 @@ int main () {
     cout << "Hello World";
     return 0;
 } 
-*/
+
 //private class 
 struct student{
     string name;
@@ -35,3 +35,25 @@ int main(){
     s1.name = "Ayush";
     return 0;
 }
+
+// enumeration 
+enum day{
+    mon,
+    tue,
+    wed
+};
+int main(){
+    day today = wed;
+    cout << today;
+    return 0;
+}
+
+// inline function
+inline  int square(int x){
+    return x*x;
+}
+int main(){
+    cout << square(5);
+    return 0;
+}
+*/
