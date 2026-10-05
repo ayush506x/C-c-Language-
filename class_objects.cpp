@@ -14,7 +14,7 @@ class Student{
 // Basic Structure to create a class object 
 int main()
 {
-    Student s1;
+    Student s1
     s1.name = "Ayush";
     s1.rollNo = 101;
     s1.display();
