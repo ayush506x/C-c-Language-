@@ -20,7 +20,7 @@ int main()
     s1.display();
     return 0;
 }
-//basic c++ code
+//basic c++ cod
 int main () {
     cout << "Hello World";
     return 0;
