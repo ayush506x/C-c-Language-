@@ -57,7 +57,17 @@ int main(){
     return 0;
 }
 */
+// Non-inline feature 
+class student {
+public:
+void display();
+
+};
+void student::display(){
+    cout<<"Hello";
+}
 int main(){
-    
+    student obj;
+    obj.display();
     return 0;
-} th g
+}
