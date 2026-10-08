@@ -70,4 +70,5 @@ int main(){
     student obj;
     obj.display();
     return 0;
-}
+}.
+int main 
