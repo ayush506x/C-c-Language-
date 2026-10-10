@@ -71,4 +71,7 @@ int main(){
     obj.display();
     return 0;
 }.
-int main 
+int main ()
+{
+    
+}
