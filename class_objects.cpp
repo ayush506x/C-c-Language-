@@ -67,9 +67,9 @@ void student::display(){
     cout<<"Hello";
 }
 int main(){
-    student obj;
+    studencct obj;
     obj.display();
-    return 0;
+    return 0;vbjgjgh
 }.
 int main ()
 {
