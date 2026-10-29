@@ -1,14 +1,12 @@
-#include<stdio.h>
-#define MAX 100
-#define EMPTY -1
-int tree[MAX];
-int size=0;
-void initTree(){
-    for(int i=0;i<MAX;i++)
-        tree[i]=EMPTY;
-    size=0;
+#include<iostream>
+using namespace std;
+struct node{
+    int data;
+    Node *left,*right;
 }
-void insertRoot(int value){
-    tree[0]=value;
-    size=1; 
+Node* newNode(int value)
+{
+    Node* n=new Node;
+    n->data=value;
+    
 }
