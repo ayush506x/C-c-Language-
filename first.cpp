@@ -1,21 +1,43 @@
+/*create a class A hving DM as x=48
+create a class B having same DM x but value =20
+class c is inheriting both classes and print the value of x using the obj C */
 #include <iostream>
 using namespace std;
 
-int moveCount = 0;
+// Base class A
+class A
+{
+public:
+    int x = 48;   // Data member of class A
+};
 
-void hanoi(int n, char source, char target, char spare) {
-    if (n == 0) return;
-    hanoi(n - 1, source, spare, target);
-    cout << "Move disk " << n << " from " << source << " to " << target << endl;
-    moveCount++;
-    hanoi(n - 1, spare, target, source);
-}
+// Base class B
+class B
+{
+public:
+    int x = 20;  
+};
 
-int main() {
-    int n;
-    cout << "Enter number of disks: ";
-    cin >> n;
-    hanoi(n, 'A', 'C', 'B');
-    cout << "\nTotal moves: " << moveCount << endl;
+// Class C inherits from both A and B
+class C : public A, public B
+{
+public:
+    void display()
+    {
+        // Accessing x from class A
+        cout << "Value of x from class A = " << A::x << endl;
+
+        // Accessing x from class B
+        cout << "Value of x from class B = " << B::x << endl;
+    }
+
+};
+
+int main()
+{
+    C obj;   // Object of class C
+
+    obj.display();
+
     return 0;
-}
+}   a   
