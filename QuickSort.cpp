@@ -45,7 +45,7 @@ void display(int A[], int n)
 // Main function
 int main()
 {
-    int A[] = {10, 80, 30, 90, 40, 50, 70};
+    int A[] = {10,7,8,9,1,5};
     int n = sizeof(A) / sizeof(A[0]);
 
     cout << "Original Array: ";
