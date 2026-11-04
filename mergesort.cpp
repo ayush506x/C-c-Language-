@@ -1,21 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class C
 {
-    int temp[100];
-    int i = low;
-    int j = mid + 1;
-pointer
-    int k =0;
-    while (i<=mid && j<= high)
+public:
+    C()
     {
-        if (arr[i] < arr[j])
-        {
-            temp[k] = arr[i];
-            i++;
-        }
-        else 
-        {
-            temp[k] = arr[j];
-            j++;
-        }
-    k++
+        cout << "Constructor of C" << endl;
     }
-}
+};
+
+class A : public C
+{
+public:
+    A()
+    {
+        cout << "Constructor of A" << endl;
+    }
+};
+
+class B : public C
+{
+public:
+    B()
+    {
+        cout << "Constructor of B" << endl;
+    }
+};
+
+int main()
+{
+    A obj1;
+    B obj2;
+
+    return 0;
+}hjjhg
